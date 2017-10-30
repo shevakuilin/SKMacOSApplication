@@ -11,6 +11,8 @@
 		9F0428A91FA6FD9600FB05D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428A81FA6FD9600FB05D1 /* ViewController.swift */; };
 		9F0428AB1FA6FD9600FB05D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0428AA1FA6FD9600FB05D1 /* Assets.xcassets */; };
 		9F0428AE1FA6FD9600FB05D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0428AC1FA6FD9600FB05D1 /* Main.storyboard */; };
+		9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428B61FA704A900FB05D1 /* SKWindowController.swift */; };
+		9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9F0428AD1FA6FD9600FB05D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F0428AF1FA6FD9600FB05D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0428B01FA6FD9600FB05D1 /* SKMacOSApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SKMacOSApplication.entitlements; sourceTree = "<group>"; };
+		9F0428B61FA704A900FB05D1 /* SKWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWindowController.swift; sourceTree = "<group>"; };
+		9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				9F0428A61FA6FD9600FB05D1 /* AppDelegate.swift */,
 				9F0428A81FA6FD9600FB05D1 /* ViewController.swift */,
+				9F0428B61FA704A900FB05D1 /* SKWindowController.swift */,
+				9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */,
 				9F0428AA1FA6FD9600FB05D1 /* Assets.xcassets */,
 				9F0428AC1FA6FD9600FB05D1 /* Main.storyboard */,
 				9F0428AF1FA6FD9600FB05D1 /* Info.plist */,
@@ -89,6 +95,7 @@
 		9F04289B1FA6FD9500FB05D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SK;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ShevaKuilin;
@@ -134,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */,
 				9F0428A91FA6FD9600FB05D1 /* ViewController.swift in Sources */,
 				9F0428A71FA6FD9600FB05D1 /* AppDelegate.swift in Sources */,
+				9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

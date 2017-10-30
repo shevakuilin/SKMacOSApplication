@@ -1,0 +1,2 @@
+# SKMacOSApplication
+ An interesting attempt

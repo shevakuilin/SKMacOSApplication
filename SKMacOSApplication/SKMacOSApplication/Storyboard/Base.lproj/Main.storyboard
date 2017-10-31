@@ -816,7 +816,7 @@
                                                 </buttonCell>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-6J-BNZ">
-                                                <rect key="frame" x="18" y="144" width="35" height="35"/>
+                                                <rect key="frame" x="18" y="139" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="Gg4-by-Fma"/>
                                                     <constraint firstAttribute="height" constant="35" id="gV8-bv-CrL"/>
@@ -827,7 +827,7 @@
                                                 </buttonCell>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="FAj-pI-Ue6">
-                                                <rect key="frame" x="18" y="99" width="35" height="35"/>
+                                                <rect key="frame" x="18" y="89" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="QJT-7H-fNq"/>
                                                     <constraint firstAttribute="height" constant="35" id="kJF-pg-rrn"/>
@@ -857,14 +857,14 @@
                                             <constraint firstAttribute="trailing" secondItem="FAj-pI-Ue6" secondAttribute="trailing" constant="17" id="FKK-FE-GbP"/>
                                             <constraint firstAttribute="trailing" secondItem="Z8N-6J-BNZ" secondAttribute="trailing" constant="17" id="U0W-ln-Ga9"/>
                                             <constraint firstItem="wmj-Ij-toU" firstAttribute="top" secondItem="ATb-bp-3aG" secondAttribute="bottom" constant="28" id="ZfA-TJ-Pcn"/>
-                                            <constraint firstItem="Z8N-6J-BNZ" firstAttribute="top" secondItem="wmj-Ij-toU" secondAttribute="bottom" constant="10" id="b44-wJ-rHp"/>
+                                            <constraint firstItem="Z8N-6J-BNZ" firstAttribute="top" secondItem="wmj-Ij-toU" secondAttribute="bottom" constant="15" id="b44-wJ-rHp"/>
                                             <constraint firstItem="dla-Lu-xHO" firstAttribute="leading" secondItem="IBv-6F-nDz" secondAttribute="leading" constant="18" id="dqB-7v-Tjl"/>
                                             <constraint firstItem="FAj-pI-Ue6" firstAttribute="leading" secondItem="IBv-6F-nDz" secondAttribute="leading" constant="18" id="eWn-iR-1Mc"/>
                                             <constraint firstItem="ATb-bp-3aG" firstAttribute="top" secondItem="IBv-6F-nDz" secondAttribute="top" constant="50" id="rGG-NE-a9x"/>
                                             <constraint firstAttribute="trailing" secondItem="ATb-bp-3aG" secondAttribute="trailing" constant="11" id="rWG-Lq-G8k"/>
                                             <constraint firstAttribute="bottom" secondItem="dla-Lu-xHO" secondAttribute="bottom" constant="20" id="sPH-pL-3uL"/>
                                             <constraint firstItem="wmj-Ij-toU" firstAttribute="leading" secondItem="IBv-6F-nDz" secondAttribute="leading" constant="18" id="xN9-Ui-Gw9"/>
-                                            <constraint firstItem="FAj-pI-Ue6" firstAttribute="top" secondItem="Z8N-6J-BNZ" secondAttribute="bottom" constant="10" id="zeF-49-aYL"/>
+                                            <constraint firstItem="FAj-pI-Ue6" firstAttribute="top" secondItem="Z8N-6J-BNZ" secondAttribute="bottom" constant="15" id="zeF-49-aYL"/>
                                             <constraint firstAttribute="trailing" secondItem="wmj-Ij-toU" secondAttribute="trailing" constant="17" id="zyg-bs-mIy"/>
                                         </constraints>
                                     </customView>

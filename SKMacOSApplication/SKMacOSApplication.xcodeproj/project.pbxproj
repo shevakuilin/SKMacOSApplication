@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		9F0428A71FA6FD9600FB05D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428A61FA6FD9600FB05D1 /* AppDelegate.swift */; };
-		9F0428A91FA6FD9600FB05D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428A81FA6FD9600FB05D1 /* ViewController.swift */; };
 		9F0428AB1FA6FD9600FB05D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0428AA1FA6FD9600FB05D1 /* Assets.xcassets */; };
 		9F0428AE1FA6FD9600FB05D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0428AC1FA6FD9600FB05D1 /* Main.storyboard */; };
 		9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428B61FA704A900FB05D1 /* SKWindowController.swift */; };
+		9F168ED91FA855EF0055D961 /* SKLetfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */; };
 		9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */; };
+		9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */; };
+		9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F0428A31FA6FD9600FB05D1 /* SKMacOSApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKMacOSApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0428A61FA6FD9600FB05D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F0428A81FA6FD9600FB05D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F0428AA1FA6FD9600FB05D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F0428AD1FA6FD9600FB05D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F0428AF1FA6FD9600FB05D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0428B01FA6FD9600FB05D1 /* SKMacOSApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SKMacOSApplication.entitlements; sourceTree = "<group>"; };
 		9F0428B61FA704A900FB05D1 /* SKWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWindowController.swift; sourceTree = "<group>"; };
+		9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLetfViewController.swift; sourceTree = "<group>"; };
 		9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftView.swift; sourceTree = "<group>"; };
+		9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWeatherController.swift; sourceTree = "<group>"; };
+		9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +61,82 @@
 		9F0428A51FA6FD9600FB05D1 /* SKMacOSApplication */ = {
 			isa = PBXGroup;
 			children = (
-				9F0428A61FA6FD9600FB05D1 /* AppDelegate.swift */,
-				9F0428A81FA6FD9600FB05D1 /* ViewController.swift */,
-				9F0428B61FA704A900FB05D1 /* SKWindowController.swift */,
+				9F168EDD1FA856550055D961 /* Root */,
+				9F168EDE1FA856600055D961 /* BaseModule */,
+				9F168EDC1FA8563C0055D961 /* NavigationModule */,
+				9F168EDB1FA856260055D961 /* RightModule */,
+				9F168EDA1FA8561B0055D961 /* LeftModule */,
+				9F168EDF1FA856830055D961 /* Resource */,
+				9F168EE01FA856930055D961 /* Storyboard */,
+				9F168EE11FA856BA0055D961 /* Config */,
+			);
+			path = SKMacOSApplication;
+			sourceTree = "<group>";
+		};
+		9F168EDA1FA8561B0055D961 /* LeftModule */ = {
+			isa = PBXGroup;
+			children = (
+				9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */,
 				9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */,
+			);
+			path = LeftModule;
+			sourceTree = "<group>";
+		};
+		9F168EDB1FA856260055D961 /* RightModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RightModule;
+			sourceTree = "<group>";
+		};
+		9F168EDC1FA8563C0055D961 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
+		9F168EDD1FA856550055D961 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9F0428A61FA6FD9600FB05D1 /* AppDelegate.swift */,
+				9F0428B61FA704A900FB05D1 /* SKWindowController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9F168EDE1FA856600055D961 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		9F168EDF1FA856830055D961 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				9F0428AA1FA6FD9600FB05D1 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9F168EE01FA856930055D961 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				9F0428AC1FA6FD9600FB05D1 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9F168EE11FA856BA0055D961 /* Config */ = {
+			isa = PBXGroup;
+			children = (
 				9F0428AF1FA6FD9600FB05D1 /* Info.plist */,
 				9F0428B01FA6FD9600FB05D1 /* SKMacOSApplication.entitlements */,
 			);
-			path = SKMacOSApplication;
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */,
-				9F0428A91FA6FD9600FB05D1 /* ViewController.swift in Sources */,
 				9F0428A71FA6FD9600FB05D1 /* AppDelegate.swift in Sources */,
 				9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */,
+				9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */,
+				9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */,
+				9F168ED91FA855EF0055D961 /* SKLetfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,6 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -272,10 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SKMacOSApplication/SKMacOSApplication.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SKMacOSApplication/Config/SKMacOSApplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SKMacOSApplication/Info.plist;
+				INFOPLIST_FILE = SKMacOSApplication/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shevakuilin.SKMacOSApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,10 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SKMacOSApplication/SKMacOSApplication.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SKMacOSApplication/Config/SKMacOSApplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SKMacOSApplication/Info.plist;
+				INFOPLIST_FILE = SKMacOSApplication/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shevakuilin.SKMacOSApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";

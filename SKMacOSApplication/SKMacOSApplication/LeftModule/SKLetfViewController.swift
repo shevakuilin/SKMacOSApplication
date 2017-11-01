@@ -11,7 +11,7 @@ import Cocoa
 class SKLetfViewController: NSViewController {
 
     @IBOutlet weak var searchTextField: NSSearchField!  // 搜索
-    @IBOutlet weak var addFriendButton: NSButton!       // 添加
+    @IBOutlet weak var addFriendButton: NSButton!       // 添加群聊
     
     @IBOutlet weak var headImageView: NSImageView!      // 头像
     @IBOutlet weak var messageButton: NSButton!         // 消息
@@ -23,7 +23,13 @@ class SKLetfViewController: NSViewController {
         super.viewDidLoad()
         drawMask()
         fillDefaultData()
-        setAction()
+//        let doubleClick = NSClickGestureRecognizer(target: self, action: #selector(doubleClikc(gesture:)))
+//        doubleClick.numberOfClicksRequired = 2
+//        view.addGestureRecognizer(doubleClick)
+    }
+    
+    @objc private func doubleClikc(gesture: NSClickGestureRecognizer) {
+        print("doubleClick!!")
     }
     
     // MARK: 绘制
@@ -36,6 +42,8 @@ class SKLetfViewController: NSViewController {
     // MARK: 填充数据
     private func fillDefaultData() {
         headImageView.image = NSImage(named: NSImage.Name(rawValue: "myHeadImage"))
+        addFriendButton.image = NSImage(named: NSImage.Name(rawValue: "Tabbar-Add"))
+        addFriendButton.alternateImage = NSImage(named: NSImage.Name(rawValue: "Tabbar-Add-Selected"))
         
         messageButton.image = NSImage(named: NSImage.Name(rawValue: "Tabbar-Chat"))                     // 未选中状态显示的图片
         messageButton.alternateImage = NSImage(named: NSImage.Name(rawValue: "Tabbar-Chat-Selected"))   // 选中状态显示的图片
@@ -46,24 +54,30 @@ class SKLetfViewController: NSViewController {
         auxiliaryButton.image = NSImage(named: NSImage.Name(rawValue: "Tabbar-Preferences-HI"))
     }
     
-    // MARK: 设置动作
-    private func setAction() {
-        messageButton.action = #selector(clickMessageBtn(_:))
-        friendsButton.action = #selector(clickFriendsBtn(_:))
-        collectionButton.action = #selector(clickCollectionBtn(_:))
-        auxiliaryButton.action = #selector(auxiliaryBtn(_:))
+    
+    @IBAction func clickMessage(_ sender: NSButton) {
+        if sender.state == .on {
+            friendsButton.state = .off
+            collectionButton.state = .off
+        } else {
+            messageButton.state = .on
+        }
+    }
+    @IBAction func clickFriends(_ sender: NSButton) {
+        if sender.state == .on {
+            messageButton.state = .off
+            collectionButton.state = .off
+        } else {
+            friendsButton.state = .on
+        }
+    }
+    @IBAction func clickCollection(_ sender: NSButton) {
+        if sender.state == .on {
+            messageButton.state = .off
+            friendsButton.state = .off
+        } else {
+            collectionButton.state = .on
+        }
     }
     
-    @objc private func clickMessageBtn(_ sender: NSButton) {
-        
-    }
-    
-    @objc private func clickFriendsBtn(_ sender: NSButton) {
-    }
-    
-    @objc private func clickCollectionBtn(_ sender: NSButton) {
-    }
-    
-    @objc private func auxiliaryBtn(_ sender: NSButton) {
-    }
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="SKMessageCell" customModule="SKMacOSApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFX-IU-ty9">
+                    <rect key="frame" x="14" y="16" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="tH4-YH-H9r"/>
+                        <constraint firstAttribute="height" constant="48" id="vnd-aA-avG"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="friendHeadImage" id="N2g-43-eD1"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a0a-O1-o1m">
+                    <rect key="frame" x="73" y="37" width="50" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="yDW-ox-tsZ"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="林周钰" id="j01-Si-Hrn">
+                        <font key="font" metaFont="system" size="15"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-oT-dXi">
+                    <rect key="frame" x="74" y="19" width="376" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="56r-a2-bhK"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="[表情]" id="tcl-lf-g7z">
+                        <font key="font" metaFont="system" size="12"/>
+                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Swq-oT-dXi" firstAttribute="leading" secondItem="aFX-IU-ty9" secondAttribute="trailing" constant="14" id="Jlh-cl-bAx"/>
+                <constraint firstItem="aFX-IU-ty9" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="14" id="QPb-85-UUE"/>
+                <constraint firstItem="Swq-oT-dXi" firstAttribute="top" secondItem="a0a-O1-o1m" secondAttribute="bottom" constant="1" id="W6T-WC-UzO"/>
+                <constraint firstItem="aFX-IU-ty9" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="glK-PH-UbE"/>
+                <constraint firstItem="a0a-O1-o1m" firstAttribute="top" secondItem="aFX-IU-ty9" secondAttribute="top" constant="3" id="oz8-cH-Jsp"/>
+                <constraint firstAttribute="trailing" secondItem="Swq-oT-dXi" secondAttribute="trailing" constant="32" id="pNq-Fj-OxR"/>
+                <constraint firstItem="a0a-O1-o1m" firstAttribute="leading" secondItem="aFX-IU-ty9" secondAttribute="trailing" constant="13" id="s2z-jw-fsj"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="169.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="friendHeadImage" width="498" height="500"/>
+    </resources>
+</document>

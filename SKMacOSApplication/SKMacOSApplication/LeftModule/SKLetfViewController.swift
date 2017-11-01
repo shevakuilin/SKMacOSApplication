@@ -8,6 +8,8 @@
 
 import Cocoa
 
+private let reuseCellKey:String = "MessageCell"
+
 class SKLetfViewController: NSViewController {
 
     @IBOutlet weak var searchTextField: NSSearchField!  // 搜索
@@ -19,17 +21,15 @@ class SKLetfViewController: NSViewController {
     @IBOutlet weak var collectionButton: NSButton!      // 收藏
     @IBOutlet weak var auxiliaryButton: NSButton!       // 辅助功能
     
+
+    @IBOutlet weak var tableView: NSTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         drawMask()
         fillDefaultData()
-//        let doubleClick = NSClickGestureRecognizer(target: self, action: #selector(doubleClikc(gesture:)))
-//        doubleClick.numberOfClicksRequired = 2
-//        view.addGestureRecognizer(doubleClick)
-    }
-    
-    @objc private func doubleClikc(gesture: NSClickGestureRecognizer) {
-        print("doubleClick!!")
+        setTableView()
+        registerCell()
     }
     
     // MARK: 绘制
@@ -52,6 +52,17 @@ class SKLetfViewController: NSViewController {
         collectionButton.image = NSImage(named: NSImage.Name(rawValue: "Tabbar-Favorites"))
         collectionButton.alternateImage = NSImage(named: NSImage.Name(rawValue: "Tabbar-Favorites-Selected"))
         auxiliaryButton.image = NSImage(named: NSImage.Name(rawValue: "Tabbar-Preferences-HI"))
+    }
+    
+    private func setTableView() {
+        tableView.rowHeight = 80
+    }
+    
+    // MARK: 注册Cell
+    private func registerCell() {
+        if let messageNib:NSNib = NSNib.init(nibNamed: NSNib.Name(rawValue: "SKMessageCell"), bundle: nil) {
+            tableView.register(messageNib, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: reuseCellKey))
+        }
     }
     
     
@@ -81,3 +92,24 @@ class SKLetfViewController: NSViewController {
     }
     
 }
+
+// MARK: DataSource
+extension SKLetfViewController: NSTableViewDataSource {
+    
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return 50
+    }
+    
+}
+
+// MARK: Delegate
+extension SKLetfViewController: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: reuseCellKey), owner: nil) as! SKMessageCell
+        
+        return cell
+    }
+    
+}
+

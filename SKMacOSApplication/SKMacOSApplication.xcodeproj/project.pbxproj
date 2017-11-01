@@ -13,8 +13,14 @@
 		9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0428B61FA704A900FB05D1 /* SKWindowController.swift */; };
 		9F168ED91FA855EF0055D961 /* SKLetfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */; };
 		9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */; };
+		9F55A85A1FA9C676008DC05A /* SKRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A8591FA9C676008DC05A /* SKRightViewController.swift */; };
+		9F55A85C1FA9C695008DC05A /* SKRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A85B1FA9C695008DC05A /* SKRightView.swift */; };
+		9F55A85E1FA9C6FC008DC05A /* SKRightNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */; };
 		9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */; };
 		9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */; };
+		9F9F79141FA97815001DA165 /* SKLeftBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F79131FA97815001DA165 /* SKLeftBaseView.swift */; };
+		9F9F79171FA9A744001DA165 /* SKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F79161FA9A744001DA165 /* SKMessageCell.swift */; };
+		9F9F79191FA9A753001DA165 /* SKMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F79181FA9A753001DA165 /* SKMessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +33,14 @@
 		9F0428B61FA704A900FB05D1 /* SKWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWindowController.swift; sourceTree = "<group>"; };
 		9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLetfViewController.swift; sourceTree = "<group>"; };
 		9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftView.swift; sourceTree = "<group>"; };
+		9F55A8591FA9C676008DC05A /* SKRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightViewController.swift; sourceTree = "<group>"; };
+		9F55A85B1FA9C695008DC05A /* SKRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightView.swift; sourceTree = "<group>"; };
+		9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightNavigationView.swift; sourceTree = "<group>"; };
 		9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWeatherController.swift; sourceTree = "<group>"; };
 		9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSplitViewController.swift; sourceTree = "<group>"; };
+		9F9F79131FA97815001DA165 /* SKLeftBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftBaseView.swift; sourceTree = "<group>"; };
+		9F9F79161FA9A744001DA165 /* SKMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKMessageCell.swift; sourceTree = "<group>"; };
+		9F9F79181FA9A753001DA165 /* SKMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKMessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 				9F168EDA1FA8561B0055D961 /* LeftModule */,
 				9F168EDF1FA856830055D961 /* Resource */,
 				9F168EE01FA856930055D961 /* Storyboard */,
+				9F9F79151FA9A71D001DA165 /* Xib */,
 				9F168EE11FA856BA0055D961 /* Config */,
 			);
 			path = SKMacOSApplication;
@@ -78,6 +91,7 @@
 			children = (
 				9F168ED81FA855EF0055D961 /* SKLetfViewController.swift */,
 				9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */,
+				9F9F79131FA97815001DA165 /* SKLeftBaseView.swift */,
 			);
 			path = LeftModule;
 			sourceTree = "<group>";
@@ -85,6 +99,9 @@
 		9F168EDB1FA856260055D961 /* RightModule */ = {
 			isa = PBXGroup;
 			children = (
+				9F55A8591FA9C676008DC05A /* SKRightViewController.swift */,
+				9F55A85B1FA9C695008DC05A /* SKRightView.swift */,
+				9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */,
 			);
 			path = RightModule;
 			sourceTree = "<group>";
@@ -137,6 +154,15 @@
 				9F0428B01FA6FD9600FB05D1 /* SKMacOSApplication.entitlements */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		9F9F79151FA9A71D001DA165 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F79161FA9A744001DA165 /* SKMessageCell.swift */,
+				9F9F79181FA9A753001DA165 /* SKMessageCell.xib */,
+			);
+			path = Xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9F79191FA9A753001DA165 /* SKMessageCell.xib in Resources */,
 				9F0428AB1FA6FD9600FB05D1 /* Assets.xcassets in Resources */,
 				9F0428AE1FA6FD9600FB05D1 /* Main.storyboard in Resources */,
 			);
@@ -211,8 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9F79141FA97815001DA165 /* SKLeftBaseView.swift in Sources */,
+				9F55A85E1FA9C6FC008DC05A /* SKRightNavigationView.swift in Sources */,
+				9F9F79171FA9A744001DA165 /* SKMessageCell.swift in Sources */,
 				9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */,
+				9F55A85A1FA9C676008DC05A /* SKRightViewController.swift in Sources */,
 				9F0428A71FA6FD9600FB05D1 /* AppDelegate.swift in Sources */,
+				9F55A85C1FA9C695008DC05A /* SKRightView.swift in Sources */,
 				9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */,
 				9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */,
 				9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */,

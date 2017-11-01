@@ -779,8 +779,22 @@
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                             </button>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-kr-0eN">
+                                                <rect key="frame" x="18" y="11" width="53" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="t3h-yM-BbB"/>
+                                                </constraints>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="林周钰" id="0TS-HN-xUA">
+                                                    <font key="font" metaFont="systemBold" size="16"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="yBf-kr-0eN" firstAttribute="centerY" secondItem="yR7-GX-rga" secondAttribute="centerY" constant="2" id="EJg-Qx-ERY"/>
+                                            <constraint firstItem="yBf-kr-0eN" firstAttribute="leading" secondItem="yR7-GX-rga" secondAttribute="leading" constant="20" id="S4v-ci-j0o"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yBf-kr-0eN" secondAttribute="trailing" constant="20" symbolic="YES" id="SgF-G2-KOX"/>
                                             <constraint firstAttribute="trailing" secondItem="xif-n1-db7" secondAttribute="trailing" constant="18" id="Tjt-FO-poH"/>
                                             <constraint firstItem="xif-n1-db7" firstAttribute="top" secondItem="yR7-GX-rga" secondAttribute="top" constant="9" id="bCa-Cy-jTn"/>
                                             <constraint firstAttribute="height" constant="50" id="hbH-YX-uEA"/>

@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -807,13 +806,15 @@
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="wmj-Ij-toU">
                                                 <rect key="frame" x="15" y="289" width="40" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="e79-zs-c6w"/>
                                                     <constraint firstAttribute="height" constant="40" id="xnA-uR-e6h"/>
                                                 </constraints>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Slf-6v-ATi">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Slf-6v-ATi">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="clickMessage:" target="I2b-nT-5xX" id="8AV-n1-eq2"/>
+                                                </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-6J-BNZ">
                                                 <rect key="frame" x="15" y="239" width="40" height="40"/>
@@ -822,9 +823,12 @@
                                                     <constraint firstAttribute="height" constant="40" id="gV8-bv-CrL"/>
                                                 </constraints>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="k2G-ry-PMt">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="clickFriends:" target="I2b-nT-5xX" id="hxA-IX-mfk"/>
+                                                </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="FAj-pI-Ue6">
                                                 <rect key="frame" x="15" y="189" width="40" height="40"/>
@@ -833,9 +837,12 @@
                                                     <constraint firstAttribute="height" constant="40" id="kJF-pg-rrn"/>
                                                 </constraints>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="qni-gc-C5u">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="clickCollection:" target="I2b-nT-5xX" id="9Xc-AF-JnY"/>
+                                                </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="dla-Lu-xHO">
                                                 <rect key="frame" x="15" y="20" width="40" height="40"/>
@@ -880,14 +887,14 @@
                                         </searchFieldCell>
                                     </searchField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZEl-tc-WHX">
-                                        <rect key="frame" x="259" y="415" width="39" height="32"/>
+                                        <rect key="frame" x="265" y="419" width="27" height="27"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="27" id="hQ1-OZ-Rmg"/>
-                                            <constraint firstAttribute="height" constant="21" id="xPx-0w-D2J"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="27" id="hQ1-OZ-Rmg"/>
+                                            <constraint firstAttribute="height" constant="27" id="xPx-0w-D2J"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="4a4-Ks-DBv">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="systemUltraLight" size="20"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" alignment="center" inset="2" id="4a4-Ks-DBv">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
                                 </subviews>
@@ -902,7 +909,7 @@
                                     <constraint firstItem="IBv-6F-nDz" firstAttribute="top" secondItem="1LS-Qy-IqN" secondAttribute="top" id="mpe-Lo-oa0"/>
                                     <constraint firstAttribute="bottom" secondItem="IBv-6F-nDz" secondAttribute="bottom" id="rTX-cp-wcn"/>
                                     <constraint firstItem="ZEl-tc-WHX" firstAttribute="leading" secondItem="8ka-Iz-fcd" secondAttribute="trailing" constant="8" id="z3w-aA-50p"/>
-                                    <constraint firstItem="ZEl-tc-WHX" firstAttribute="top" secondItem="1LS-Qy-IqN" secondAttribute="top" constant="7" id="zxg-y3-w1o"/>
+                                    <constraint firstItem="ZEl-tc-WHX" firstAttribute="top" secondItem="1LS-Qy-IqN" secondAttribute="top" constant="4" id="zxg-y3-w1o"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -924,6 +931,7 @@
                     </connections>
                 </viewController>
                 <customObject id="oj2-ZL-dig" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="QdS-t9-PSi"/>
             </objects>
             <point key="canvasLocation" x="4" y="1220"/>
         </scene>

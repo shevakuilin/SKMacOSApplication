@@ -1,5 +1,5 @@
 //
-//  SKRightViewController.swift
+//  SKRightTopViewController.swift
 //  SKMacOSApplication
 //
 //  Created by ShevaKuilin on 2017/11/1.
@@ -8,12 +8,11 @@
 
 import Cocoa
 
-class SKRightViewController: NSViewController {
+class SKRightTopViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-
     }
     
 }

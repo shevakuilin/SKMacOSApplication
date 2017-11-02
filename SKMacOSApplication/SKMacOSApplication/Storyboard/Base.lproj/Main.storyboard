@@ -840,14 +840,14 @@
             <objects>
                 <viewController id="0B4-sX-HtI" customClass="SKRightBottomViewController" customModule="SKMacOSApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dMs-ln-SJu">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-cu-oaL" customClass="SKRightBottomView" customModule="SKMacOSApplication" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="200"/>
                                 <subviews>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="GbS-Zn-b3c">
-                                        <rect key="frame" x="18" y="62" width="30" height="30"/>
+                                        <rect key="frame" x="18" y="162" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="8om-XC-Yh3"/>
                                             <constraint firstAttribute="height" constant="30" id="kqA-qp-cVi"/>
@@ -858,7 +858,7 @@
                                         </buttonCell>
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="und-3Z-O44">
-                                        <rect key="frame" x="55" y="62" width="30" height="30"/>
+                                        <rect key="frame" x="57" y="162" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="GRw-Fh-eVS"/>
                                             <constraint firstAttribute="width" constant="30" id="cRp-SU-Q0T"/>
@@ -869,7 +869,7 @@
                                         </buttonCell>
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="4NM-Jh-Deq">
-                                        <rect key="frame" x="92" y="62" width="30" height="30"/>
+                                        <rect key="frame" x="94" y="162" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ka3-PG-SVy"/>
                                             <constraint firstAttribute="width" constant="30" id="pbA-N4-Unb"/>
@@ -880,7 +880,7 @@
                                         </buttonCell>
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="vqA-vJ-NOl">
-                                        <rect key="frame" x="129" y="62" width="30" height="30"/>
+                                        <rect key="frame" x="131" y="162" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="BRq-bc-Nqc"/>
                                             <constraint firstAttribute="height" constant="30" id="ggU-0M-XN3"/>
@@ -890,18 +890,51 @@
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
+                                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmT-gG-97D">
+                                        <rect key="frame" x="18" y="20" width="414" height="134"/>
+                                        <clipView key="contentView" id="Zt4-ZY-Xwx">
+                                            <rect key="frame" x="0.0" y="0.0" width="399" height="134"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textView focusRingType="none" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsDocumentBackgroundColorChange="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="KjG-5i-Apj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="399" height="134"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="minSize" width="399" height="134"/>
+                                                    <size key="maxSize" width="463" height="10000000"/>
+                                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </textView>
+                                            </subviews>
+                                        </clipView>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="260" id="bS5-na-kwj"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="tsb-Z6-0NY"/>
+                                        </constraints>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="vYL-MI-hai">
+                                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Gd6-vn-rgP">
+                                            <rect key="frame" x="399" y="0.0" width="15" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vqA-vJ-NOl" firstAttribute="leading" secondItem="4NM-Jh-Deq" secondAttribute="trailing" constant="7" id="0na-eU-8F5"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="4aV-V2-oNI"/>
                                     <constraint firstItem="und-3Z-O44" firstAttribute="top" secondItem="ZcL-cu-oaL" secondAttribute="top" constant="8" id="8TS-NP-pUl"/>
+                                    <constraint firstAttribute="bottom" secondItem="PmT-gG-97D" secondAttribute="bottom" constant="20" id="DRn-ui-hoJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="PmT-gG-97D" secondAttribute="trailing" constant="18" id="EFz-g0-KPG"/>
                                     <constraint firstItem="vqA-vJ-NOl" firstAttribute="top" secondItem="ZcL-cu-oaL" secondAttribute="top" constant="8" id="Max-Le-CJv"/>
                                     <constraint firstItem="4NM-Jh-Deq" firstAttribute="leading" secondItem="und-3Z-O44" secondAttribute="trailing" constant="7" id="NMi-iD-4qd"/>
+                                    <constraint firstItem="PmT-gG-97D" firstAttribute="top" secondItem="GbS-Zn-b3c" secondAttribute="bottom" constant="8" id="cIW-Do-p9X"/>
                                     <constraint firstItem="GbS-Zn-b3c" firstAttribute="top" secondItem="ZcL-cu-oaL" secondAttribute="top" constant="8" id="fRy-7n-OkB"/>
                                     <constraint firstItem="GbS-Zn-b3c" firstAttribute="leading" secondItem="ZcL-cu-oaL" secondAttribute="leading" constant="18" id="qQq-uB-hiH"/>
                                     <constraint firstItem="4NM-Jh-Deq" firstAttribute="top" secondItem="ZcL-cu-oaL" secondAttribute="top" constant="8" id="qp4-kL-wZu"/>
+                                    <constraint firstItem="PmT-gG-97D" firstAttribute="leading" secondItem="ZcL-cu-oaL" secondAttribute="leading" constant="18" id="sIy-IQ-77u"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="xxR-Nj-Rfj"/>
-                                    <constraint firstItem="und-3Z-O44" firstAttribute="leading" secondItem="GbS-Zn-b3c" secondAttribute="trailing" constant="7" id="yiC-yY-1sc"/>
+                                    <constraint firstItem="und-3Z-O44" firstAttribute="leading" secondItem="GbS-Zn-b3c" secondAttribute="trailing" constant="9" id="yiC-yY-1sc"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -912,10 +945,13 @@
                             <constraint firstItem="ZcL-cu-oaL" firstAttribute="leading" secondItem="dMs-ln-SJu" secondAttribute="leading" id="oGd-rm-B8x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="KjG-5i-Apj" id="tCX-CA-XpB"/>
+                    </connections>
                 </viewController>
                 <customObject id="eH9-st-JUj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="1356"/>
+            <point key="canvasLocation" x="1254" y="1396"/>
         </scene>
         <!--Letf View Controller-->
         <scene sceneID="FWc-K9-H2D">

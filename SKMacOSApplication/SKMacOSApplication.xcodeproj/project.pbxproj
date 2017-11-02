@@ -16,7 +16,6 @@
 		9F1A771B1FA9E1BC00C5D512 /* SKRightBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A771A1FA9E1BC00C5D512 /* SKRightBottomViewController.swift */; };
 		9F1A771D1FA9E32000C5D512 /* SKRightBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A771C1FA9E32000C5D512 /* SKRightBottomView.swift */; };
 		9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */; };
-		9F55A85C1FA9C695008DC05A /* SKRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A85B1FA9C695008DC05A /* SKRightView.swift */; };
 		9F55A85E1FA9C6FC008DC05A /* SKRightNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */; };
 		9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */; };
 		9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */; };
@@ -38,7 +37,6 @@
 		9F1A771A1FA9E1BC00C5D512 /* SKRightBottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightBottomViewController.swift; sourceTree = "<group>"; };
 		9F1A771C1FA9E32000C5D512 /* SKRightBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightBottomView.swift; sourceTree = "<group>"; };
 		9F2E8EDF1FA71D6D003C4B5B /* SKLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftView.swift; sourceTree = "<group>"; };
-		9F55A85B1FA9C695008DC05A /* SKRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightView.swift; sourceTree = "<group>"; };
 		9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightNavigationView.swift; sourceTree = "<group>"; };
 		9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWeatherController.swift; sourceTree = "<group>"; };
 		9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSplitViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		9F168EDB1FA856260055D961 /* RightModule */ = {
 			isa = PBXGroup;
 			children = (
-				9F55A85B1FA9C695008DC05A /* SKRightView.swift */,
 				9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */,
 				9F1A77181FA9E1AB00C5D512 /* SKRightTopViewController.swift */,
 				9F1A771A1FA9E1BC00C5D512 /* SKRightBottomViewController.swift */,
@@ -250,7 +247,6 @@
 				9F0428B71FA704A900FB05D1 /* SKWindowController.swift in Sources */,
 				9F1A771B1FA9E1BC00C5D512 /* SKRightBottomViewController.swift in Sources */,
 				9F0428A71FA6FD9600FB05D1 /* AppDelegate.swift in Sources */,
-				9F55A85C1FA9C695008DC05A /* SKRightView.swift in Sources */,
 				9F1A77191FA9E1AB00C5D512 /* SKRightTopViewController.swift in Sources */,
 				9F2E8EE01FA71D6D003C4B5B /* SKLeftView.swift in Sources */,
 				9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */,

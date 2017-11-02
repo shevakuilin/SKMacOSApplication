@@ -10,6 +10,7 @@ import Cocoa
 
 class SKRightBottomViewController: NSViewController {
 
+    @IBOutlet weak var inputScrollView: NSScrollView!
     @IBOutlet var inputTextView: NSTextView!    // 输入框
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,24 @@ class SKRightBottomViewController: NSViewController {
         let paragraphStyle:NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4.0
         inputTextView.defaultParagraphStyle = paragraphStyle
+        inputTextView.delegate = self
+        inputTextView.isAutomaticQuoteSubstitutionEnabled = false// 关闭英文引号自动替换为中文引号
+    }
+}
+
+// MARK: Delegate
+extension SKRightBottomViewController: NSTextViewDelegate {
+    func textDidChange(_ notification: Notification) {
         
+    }
+    
+    // MARK: 监听键盘按键
+    func textView(_ textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
+        if commandSelector.description == "insertNewline:" {
+            print("输入完成，正在发送内容...")
+            textView.string = ""
+            return true
+        }
+        return false // 返回false系统自行处理，返回true系统不做处理
     }
 }

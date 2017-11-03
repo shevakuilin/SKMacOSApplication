@@ -10,9 +10,15 @@ import Cocoa
 
 class SKRightTopViewController: NSViewController {
 
+
+    @IBOutlet weak var tableView: NSTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        setTableView()
+    }
+    
+    private func setTableView() {
+        self.tableView.backgroundColor = NSColor(red: 243/255.0, green: 243/255.0, blue: 243/255.0, alpha: 1.0)
     }
     
 }

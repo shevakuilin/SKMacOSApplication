@@ -25,7 +25,8 @@ class SKRightBottomViewController: NSViewController {
         paragraphStyle.lineSpacing = 4.0
         inputTextView.defaultParagraphStyle = paragraphStyle
         inputTextView.delegate = self
-        inputTextView.isAutomaticQuoteSubstitutionEnabled = false// 关闭英文引号自动替换为中文引号
+        inputTextView.isAutomaticQuoteSubstitutionEnabled = false   // 关闭英文引号自动替换为中文引号
+        inputScrollView.hasVerticalScroller = false                 // 关闭scrollView滚动条显示
     }
 }
 

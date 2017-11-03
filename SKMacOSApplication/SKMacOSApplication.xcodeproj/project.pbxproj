@@ -19,6 +19,8 @@
 		9F55A85E1FA9C6FC008DC05A /* SKRightNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */; };
 		9F79990B1FAC3FCC0016C711 /* SKOtherConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79990A1FAC3FCC0016C711 /* SKOtherConversationCell.swift */; };
 		9F79990D1FAC3FD80016C711 /* SKOtherConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F79990C1FAC3FD80016C711 /* SKOtherConversationCell.xib */; };
+		9F79990F1FAC5C6A0016C711 /* SKSelfConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79990E1FAC5C6A0016C711 /* SKSelfConversationCell.swift */; };
+		9F7999111FAC5C750016C711 /* SKSelfConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7999101FAC5C750016C711 /* SKSelfConversationCell.xib */; };
 		9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */; };
 		9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */; };
 		9F9F79141FA97815001DA165 /* SKLeftBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F79131FA97815001DA165 /* SKLeftBaseView.swift */; };
@@ -42,6 +44,8 @@
 		9F55A85D1FA9C6FC008DC05A /* SKRightNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRightNavigationView.swift; sourceTree = "<group>"; };
 		9F79990A1FAC3FCC0016C711 /* SKOtherConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOtherConversationCell.swift; sourceTree = "<group>"; };
 		9F79990C1FAC3FD80016C711 /* SKOtherConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKOtherConversationCell.xib; sourceTree = "<group>"; };
+		9F79990E1FAC5C6A0016C711 /* SKSelfConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSelfConversationCell.swift; sourceTree = "<group>"; };
+		9F7999101FAC5C750016C711 /* SKSelfConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKSelfConversationCell.xib; sourceTree = "<group>"; };
 		9F99A1ED1FA8151A00CCC431 /* SKWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKWeatherController.swift; sourceTree = "<group>"; };
 		9F99A1EF1FA81D6A00CCC431 /* SKSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSplitViewController.swift; sourceTree = "<group>"; };
 		9F9F79131FA97815001DA165 /* SKLeftBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLeftBaseView.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				9F9F79181FA9A753001DA165 /* SKMessageCell.xib */,
 				9F79990A1FAC3FCC0016C711 /* SKOtherConversationCell.swift */,
 				9F79990C1FAC3FD80016C711 /* SKOtherConversationCell.xib */,
+				9F79990E1FAC5C6A0016C711 /* SKSelfConversationCell.swift */,
+				9F7999101FAC5C750016C711 /* SKSelfConversationCell.xib */,
 			);
 			path = Xib;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			files = (
 				9F9F79191FA9A753001DA165 /* SKMessageCell.xib in Resources */,
 				9F0428AB1FA6FD9600FB05D1 /* Assets.xcassets in Resources */,
+				9F7999111FAC5C750016C711 /* SKSelfConversationCell.xib in Resources */,
 				9F0428AE1FA6FD9600FB05D1 /* Main.storyboard in Resources */,
 				9F79990D1FAC3FD80016C711 /* SKOtherConversationCell.xib in Resources */,
 			);
@@ -260,6 +267,7 @@
 				9F99A1F01FA81D6A00CCC431 /* SKSplitViewController.swift in Sources */,
 				9F99A1EE1FA8151A00CCC431 /* SKWeatherController.swift in Sources */,
 				9F168ED91FA855EF0055D961 /* SKLetfViewController.swift in Sources */,
+				9F79990F1FAC5C6A0016C711 /* SKSelfConversationCell.swift in Sources */,
 				9F1A771D1FA9E32000C5D512 /* SKRightBottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

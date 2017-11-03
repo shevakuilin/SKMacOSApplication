@@ -38,7 +38,7 @@
                         <constraint firstAttribute="height" constant="17" id="56r-a2-bhK"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="[表情]" id="tcl-lf-g7z">
-                        <font key="font" metaFont="system" size="12"/>
+                        <font key="font" metaFont="cellTitle"/>
                         <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -53,6 +53,9 @@
                 <constraint firstAttribute="trailing" secondItem="Swq-oT-dXi" secondAttribute="trailing" constant="32" id="pNq-Fj-OxR"/>
                 <constraint firstItem="a0a-O1-o1m" firstAttribute="leading" secondItem="aFX-IU-ty9" secondAttribute="trailing" constant="13" id="s2z-jw-fsj"/>
             </constraints>
+            <connections>
+                <outlet property="headImageView" destination="aFX-IU-ty9" id="M6W-Pa-2dd"/>
+            </connections>
             <point key="canvasLocation" x="132" y="169.5"/>
         </customView>
     </objects>

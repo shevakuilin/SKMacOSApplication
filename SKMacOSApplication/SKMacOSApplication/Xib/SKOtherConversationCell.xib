@@ -56,7 +56,8 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="asO-AU-aHR"/>
                         <constraint firstItem="YZr-Lv-KjS" firstAttribute="leading" secondItem="K42-js-1aM" secondAttribute="leading" constant="12" id="dQv-Z3-6sa"/>
                         <constraint firstAttribute="bottom" secondItem="YZr-Lv-KjS" secondAttribute="bottom" constant="10" id="jhA-n5-t1f"/>
-                        <constraint firstAttribute="width" constant="400" id="toI-yJ-mBJ"/>
+                        <constraint firstAttribute="trailing" secondItem="YZr-Lv-KjS" secondAttribute="trailing" constant="16" id="t8V-gT-fJh"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="toI-yJ-mBJ"/>
                     </constraints>
                 </customView>
             </subviews>
@@ -65,7 +66,6 @@
                 <constraint firstAttribute="trailing" secondItem="rMs-TA-2BG" secondAttribute="trailing" constant="20" id="F8k-f4-yoF"/>
                 <constraint firstItem="ZTZ-x1-q4S" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="Um3-ax-Y2g"/>
                 <constraint firstItem="rMs-TA-2BG" firstAttribute="leading" secondItem="ZTZ-x1-q4S" secondAttribute="trailing" constant="10" id="VJS-mW-phs"/>
-                <constraint firstAttribute="trailing" secondItem="K42-js-1aM" secondAttribute="trailing" constant="20" id="Xz7-se-vNi"/>
                 <constraint firstItem="K42-js-1aM" firstAttribute="top" secondItem="rMs-TA-2BG" secondAttribute="bottom" constant="5" id="aha-hH-h0b"/>
                 <constraint firstItem="K42-js-1aM" firstAttribute="leading" secondItem="ZTZ-x1-q4S" secondAttribute="trailing" constant="10" id="bCk-Yu-Rek"/>
                 <constraint firstItem="ZTZ-x1-q4S" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="bJy-We-cWf"/>
@@ -73,6 +73,7 @@
             </constraints>
             <connections>
                 <outlet property="bubbleView" destination="K42-js-1aM" id="7vm-KO-7uN"/>
+                <outlet property="headImageView" destination="ZTZ-x1-q4S" id="N4L-aO-0Jv"/>
             </connections>
             <point key="canvasLocation" x="132" y="156"/>
         </customView>

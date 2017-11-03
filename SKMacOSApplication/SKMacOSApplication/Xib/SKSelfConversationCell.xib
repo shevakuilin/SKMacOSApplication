@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="SKSelfConversationCell" customModule="SKMacOSApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="FNo-zY-5CF">
+                    <rect key="frame" x="430" y="54" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0qM-zb-dEm"/>
+                        <constraint firstAttribute="width" constant="30" id="wOW-3A-nLI"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="myHeadImage" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Nfc-fh-75S">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="INc-rw-zuK">
+                    <rect key="frame" x="307" y="46" width="115" height="38"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="8E5-fR-vX6">
+                            <rect key="frame" x="10" y="10" width="91" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="376" id="QdY-ti-qn3"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Szr-is-Ifa"/>
+                            </constraints>
+                            <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="哈哈  可能是的" id="FLn-DM-8rO">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8E5-fR-vX6" firstAttribute="leading" secondItem="INc-rw-zuK" secondAttribute="leading" constant="12" id="8JX-va-Tdn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="8qo-3F-xVJ"/>
+                        <constraint firstAttribute="trailing" secondItem="8E5-fR-vX6" secondAttribute="trailing" constant="16" id="UJA-hO-WPN"/>
+                        <constraint firstAttribute="bottom" secondItem="8E5-fR-vX6" secondAttribute="bottom" constant="10" id="ioB-8V-kgb"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="nfB-37-RJf"/>
+                        <constraint firstItem="8E5-fR-vX6" firstAttribute="top" secondItem="INc-rw-zuK" secondAttribute="top" constant="10" id="uQE-ES-ymh"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FNo-zY-5CF" firstAttribute="leading" secondItem="INc-rw-zuK" secondAttribute="trailing" constant="8" id="1Ng-XT-atW"/>
+                <constraint firstAttribute="trailing" secondItem="FNo-zY-5CF" secondAttribute="trailing" constant="20" id="2Ez-66-5Rw"/>
+                <constraint firstItem="FNo-zY-5CF" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="GU3-H2-6Lf"/>
+                <constraint firstItem="INc-rw-zuK" firstAttribute="top" secondItem="FNo-zY-5CF" secondAttribute="top" id="LXd-BO-c1l"/>
+            </constraints>
+            <connections>
+                <outlet property="bubbleView" destination="INc-rw-zuK" id="gwb-K3-ys4"/>
+                <outlet property="headImageView" destination="FNo-zY-5CF" id="3g7-Vq-Tgk"/>
+                <outlet property="messageContent" destination="8E5-fR-vX6" id="AdQ-S6-5K9"/>
+            </connections>
+        </customView>
+    </objects>
+    <resources>
+        <image name="myHeadImage" width="460" height="460"/>
+    </resources>
+</document>

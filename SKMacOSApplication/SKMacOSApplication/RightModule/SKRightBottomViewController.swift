@@ -28,13 +28,11 @@ class SKRightBottomViewController: NSViewController {
         inputTextView.isAutomaticQuoteSubstitutionEnabled = false   // 关闭英文引号自动替换为中文引号
         inputScrollView.hasVerticalScroller = false                 // 关闭scrollView滚动条显示
     }
+    
 }
 
 // MARK: Delegate
 extension SKRightBottomViewController: NSTextViewDelegate {
-    func textDidChange(_ notification: Notification) {
-        
-    }
     
     // MARK: 监听键盘按键
     func textView(_ textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
@@ -45,4 +43,16 @@ extension SKRightBottomViewController: NSTextViewDelegate {
         }
         return false // 返回false系统自行处理，返回true系统不做处理
     }
+    
+    // MARK: 监听输入变化
+    func textViewDidChangeSelection(_ notification: Notification) {
+        let textView:NSTextView = notification.object as! NSTextView
+        let textContenHeight:CGFloat = textView.frame.size.height
+        if textContenHeight > self.inputScrollView.contentSize.height {
+            inputScrollView.hasVerticalScroller = true
+        } else {
+            inputScrollView.hasVerticalScroller = false
+        }
+    }
 }
+

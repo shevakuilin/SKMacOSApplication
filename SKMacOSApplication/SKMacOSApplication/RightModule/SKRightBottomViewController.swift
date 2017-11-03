@@ -20,7 +20,7 @@ class SKRightBottomViewController: NSViewController {
     
     private func setInputTextView() {
         inputTextView.backgroundColor = NSColor(red: 243/255.0, green: 243/255.0, blue: 243/255.0, alpha: 1.0)
-        inputTextView.font = NSFont.systemFont(ofSize: 14)
+        inputTextView.font = NSFont.systemFont(ofSize: 15)
         let paragraphStyle:NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4.0
         inputTextView.defaultParagraphStyle = paragraphStyle

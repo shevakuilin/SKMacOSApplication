@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="SKOtherConversationCell" customModule="SKMacOSApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-x1-q4S">
+                    <rect key="frame" x="20" y="54" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Guz-9q-KW9"/>
+                        <constraint firstAttribute="width" constant="30" id="oJa-bi-5UZ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="friendHeadImage" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="BRN-lX-osh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rMs-TA-2BG">
+                    <rect key="frame" x="58" y="67" width="404" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="MNv-Hk-Tdn"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="林周钰" id="3Pl-MG-AkK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="K42-js-1aM">
+                    <rect key="frame" x="60" y="8" width="400" height="54"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-Lv-KjS">
+                            <rect key="frame" x="10" y="10" width="376" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="376" id="ain-89-6CP"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="bme-zR-i2C"/>
+                            </constraints>
+                            <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="使用框对象可视化地分组窗口的内容。例如，您可以使用框将相关视图分组。使用NSBox对象来配置框的外观。" id="rhq-Zg-MIt">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YZr-Lv-KjS" firstAttribute="top" secondItem="K42-js-1aM" secondAttribute="top" constant="10" id="BPu-qc-7WQ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="asO-AU-aHR"/>
+                        <constraint firstItem="YZr-Lv-KjS" firstAttribute="leading" secondItem="K42-js-1aM" secondAttribute="leading" constant="12" id="dQv-Z3-6sa"/>
+                        <constraint firstAttribute="bottom" secondItem="YZr-Lv-KjS" secondAttribute="bottom" constant="10" id="jhA-n5-t1f"/>
+                        <constraint firstAttribute="width" constant="400" id="toI-yJ-mBJ"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="rMs-TA-2BG" firstAttribute="top" secondItem="ZTZ-x1-q4S" secondAttribute="top" id="2Ci-Cu-PcW"/>
+                <constraint firstAttribute="trailing" secondItem="rMs-TA-2BG" secondAttribute="trailing" constant="20" id="F8k-f4-yoF"/>
+                <constraint firstItem="ZTZ-x1-q4S" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="Um3-ax-Y2g"/>
+                <constraint firstItem="rMs-TA-2BG" firstAttribute="leading" secondItem="ZTZ-x1-q4S" secondAttribute="trailing" constant="10" id="VJS-mW-phs"/>
+                <constraint firstAttribute="trailing" secondItem="K42-js-1aM" secondAttribute="trailing" constant="20" id="Xz7-se-vNi"/>
+                <constraint firstItem="K42-js-1aM" firstAttribute="top" secondItem="rMs-TA-2BG" secondAttribute="bottom" constant="5" id="aha-hH-h0b"/>
+                <constraint firstItem="K42-js-1aM" firstAttribute="leading" secondItem="ZTZ-x1-q4S" secondAttribute="trailing" constant="10" id="bCk-Yu-Rek"/>
+                <constraint firstItem="ZTZ-x1-q4S" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="bJy-We-cWf"/>
+                <constraint firstAttribute="bottom" secondItem="K42-js-1aM" secondAttribute="bottom" constant="8" id="jDu-hg-tAV"/>
+            </constraints>
+            <connections>
+                <outlet property="bubbleView" destination="K42-js-1aM" id="7vm-KO-7uN"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="156"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="friendHeadImage" width="498" height="500"/>
+    </resources>
+</document>
